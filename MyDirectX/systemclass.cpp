@@ -42,6 +42,8 @@ bool SystemClass::Initialize()
 
 void SystemClass::Shutdown()
 {
+	// Application -> Input -> Windows Á¾·á
+
 	if (m_Application)
 	{
 		m_Application->Shutdown();
@@ -151,8 +153,6 @@ void SystemClass::InitializeWindows(int& screenWidth, int& screenHeight)
 	DEVMODE dmScreenSettings;
 	int posX, posY;
 
-
-	// Get an external pointer to this object.	
 	ApplicationHandle = this;
 
 	// Get the instance of this application.
